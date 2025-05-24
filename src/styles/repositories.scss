@@ -1,0 +1,29 @@
+section.repository-list {
+    margin: 40px;
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none; // retirar pontos das li
+
+        li {
+            & + li { // & com a tag referencia que se tiver um li encima dele vai ser adicionado aquela estilização
+                margin-top: 20px;
+            }
+            p {
+                font-size: 14px;
+                color: #444;
+                margin-top: 8px;
+            }
+
+            a {
+                display: inline-block; // para ele ser inline porem podendo adicionar margem
+                margin-top: 16px;
+                text-decoration: none; // retirar o sublinhado da linha
+                color: #8257e6;
+            }
+        }
+    }
+}
